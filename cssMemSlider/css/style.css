@@ -141,10 +141,10 @@ input[id="5"]:checked ~ .pagination .pagination_item[for="5"] {
     background: #fff;
 }
 
-@media (max-width: 768px){
+@media (max-width: 48rem){
 
     .container {
-        max-width: 768px;
+        max-width: 48rem;
         margin: 0 auto;
     }
     .pagination {
@@ -158,10 +158,10 @@ input[id="5"]:checked ~ .pagination .pagination_item[for="5"] {
         transform: scale(1.5);
     }
 }
-@media (max-width: 320px){
+@media (max-width: 20rem){
 
     .container {
-        max-width: 320px;
+        max-width: 20rem;
         margin: 0 auto;
     }
     .pagination {
