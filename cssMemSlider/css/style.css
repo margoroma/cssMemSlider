@@ -24,8 +24,8 @@ img {
 .slide {
     display: flex;
     transform: translate3d(0, 0, 0);
-    /* transition: all 600ms;
-    animation-name: austoplay;
+    transition: all 600ms;
+    /* animation-name: austoplay;
     animation-duration: 6.5s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
@@ -39,6 +39,7 @@ img {
     flex-grow: 0;
     max-width: 100%;
     width: 100%;
+    transition: all 300ms;
 }
 
 .item_slide label {
