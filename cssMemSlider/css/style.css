@@ -15,7 +15,6 @@ img {
 }
 
 .container {
-    position: relative;
     max-width: 90vw;
     width: 100%;
     overflow: hidden;
@@ -34,7 +33,6 @@ img {
 }
 
 .item_slide {
-    position: relative;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -44,15 +42,15 @@ img {
 }
 
 .item_slide label {
-    position: absolute;
+    position: fixed;
     font-size: 2rem;
-    bottom: -20%;
+    bottom: -35%;
     color: black;
+    width: 100%;
 }
 
 .pagination {
-    position: absolute;
-    bottom: 20vh;
+    margin-top: calc(100vh - 50%);
     left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +164,8 @@ input[id="5"]:checked ~ .pagination .pagination_item[for="5"] {
     }
     .pagination {
         justify-content: center;
-        bottom: 70vh;
+        bottom: auto;
+        margin-top: 10%;
     }
     .pagination_item {
         width: 0.8rem;
