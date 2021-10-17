@@ -1,5 +1,232 @@
-body{
+/* body {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: austoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+}
+
+.item_slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination_item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 300ms;
+}
+
+.pagination_item img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination_item:hover {
+    transform: scale(2);
+} */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    /* height: 500px; */
+}
+
+.slide {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: austoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item_slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination_item:hover{
+    transform: scale(2);
+}
+
+.pagination_item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination_item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination_item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination_item[for="2"]{
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination_item[for="3"]{
+    background: #fff;
+}
+
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked ~ .pagination .pagination_item[for="4"]{
+    background: #fff;
+}
+
+input[id="5"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked ~ .pagination .pagination_item[for="5"]{
+    background: #fff;
+}
+
+/* @keyframes autoplay{
+    20%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    
+    40%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    60%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+    80%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+} */
+
+
+
+
+
